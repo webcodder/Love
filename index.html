@@ -13,7 +13,7 @@
 <![endif]-->
 <!--[if !(IE)]><!-->
 <html><!--<![endif]--><head>
-<title>我们的回忆</title>
+<title>我们</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -24,8 +24,8 @@
 	<div style="transform: translateX(0%) translateY(0%);" class="flowtime no-transition">
 		<div id="" data-prog="__1" class="ft-section section-1" data-id="__section-1">
 			<div data-prog="__1" id="" class="ft-page page-1 hilite actual" data-id="__page-1">
-				<p class="text1"><span id="text-75" contenteditable="true">他</span> ❤ <span id="text-76" contenteditable="true">她</span> <span id="text-77" contenteditable="true">一生一世</span></p>
-				<p class="text2">按键盘 "↓" <span id="text-78" contenteditable="true">开始倾听我的表白</span></p>
+				<p class="text1"><span id="text-75" contenteditable="true">他</span> ❤ <span id="text-76" contenteditable="true">她</span><span style="margin-left: 10px">的故事</span></p>
+				<p id="divTyping" class="text2"></p>
 			</div>
 			<div data-prog="__2" id="" class="ft-page page-2 future-page" data-id="__page-2">
 				<p class="top-text" id="text-1" contenteditable="true">过去的他一直是一个人生活，享受着孤独，也憧憬着爱情。</p>
@@ -40,6 +40,21 @@
 				<img src="a/iali6.jpg" alt="一个人的山岗">
 			</div>
 		</div>
+		<script>
+		   var str = '按键盘 "↓"，静静听我说___';
+		   var i = 0;
+		   function typing(){
+		    var divTyping = document.getElementById('divTyping');
+		    if (i <= str.length) {
+		     divTyping.innerHTML = str.slice(0, i++) + '_';
+		     setTimeout('typing()', 400);//递归调用
+		    }
+		    else{
+		     divTyping.innerHTML = str;//结束打字,移除 _ 光标
+		    }
+		   }
+		   typing();
+		  </script>
 		<div id="" data-prog="__2" class="ft-section section-2" data-id="__section-2">
 			<div data-prog="__1" id="" class="ft-page page-5 full-img future-section" data-id="__page-1">
 				<h2 class="center-text" id="text-4" contenteditable="true">一个人的地铁</h2>
@@ -201,12 +216,12 @@
 				<h3 id="text-46" contenteditable="true"> 他又怎会飞的更高更远</h3>
 			</div>
 			<div data-prog="__4" id="" class="ft-page page-42 future-section future-page" data-id="__page-4">
-				<h3><span id="text-47" contenteditable="true">他不想这样。他要为她改变自己</span><br><span id="text-48" contenteditable="true">她说她喜欢狮子座的人，于是他许下愿望</span></h3>
+				<h3><span id="text-47" contenteditable="true">他不想这样。他要为她改变自己</span><br><span id="text-48" contenteditable="true">于是他许下愿望</span></h3>
 				<img src="a/iali69.jpg">
 			</div>
 			<div data-prog="__5" id="" class="ft-page page-43 future-section future-page" data-id="__page-5">
 				<img src="a/iali42.jpg">
-				<h3 id="text-49" contenteditable="true">我愿为你变成狮子座</h3>
+				<h3 id="text-49" contenteditable="true">我愿为你变得乐观温和</h3>
 			</div>
 			<div data-prog="__6" id="" class="ft-page page-44 left-img future-section future-page" data-id="__page-6">
 				<h3><span id="text-50" contenteditable="true">爱情就像花草一样</span><br><span id="text-51" contenteditable="true">需要用包容来浇灌</span></h3>
@@ -248,7 +263,7 @@
 				</p>
 			</div>
 			<div data-prog="__5" id="" class="ft-page page-50 future-section future-page" data-id="__page-5">
-				<p class="text" id="text-66" contenteditable="true">后来的一天，她说她不敢坐山车了，于是他就带她到别的地方玩。这只是他们幸福生活中的一件小事，小到无法引起别人的注意。可这是属于他和她的幸福生活。</p>
+				<p class="text" id="text-66" contenteditable="true">后来的一天，她说她不喜欢吃蛋黄，于是他就把蛋黄都吃掉，只留下蛋白。这只是他们幸福生活中的一件小事，小到无法引起别人的注意。可这是属于他和她的幸福生活。</p>
 				<img src="a/iali50_1.jpg" class="img1">
 				<img src="a/iali50_2.jpg" class="img2">
 			</div>
@@ -267,9 +282,9 @@
 				<img src="a/iali20.jpg">
 			</div>
 			<div data-prog="__2" id="" class="ft-page page-53 future-section future-page" data-id="__page-2">
-				<img src="a/iali68.jpg" alt="happy birthday">
-				<h6 id="text-72" contenteditable="true">莲莲</h6>
-				<h3 id="text-72" contenteditable="true">520快乐</h3>
+				<img src="a/iali68.jpg" alt="Happy New Year">
+				<h6 id="text-72" contenteditable="true" style="margin-top: -20px">小丫</h6>
+				<h3 id="text-72" contenteditable="true" style="margin-top: -30px">新年快乐!</h3>
 			</div>
 			<div data-prog="__3" id="" class="ft-page page-54 center-img future-section future-page" data-id="__page-3">
 				<div class="center-img">I love you</div>
@@ -281,25 +296,14 @@
 					<span id="text-74" contenteditable="true">无论精彩、平淡都会是他们喜欢的。</span><br>
 					<br>
 					<br>
-					
+					<span id="text-74" contenteditable="true">小丫，我很想你</span><br>
 				</p>				
 			</div>
 		</div>
 	</div>
 	<noscript><div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div></noscript>
 	
-	<div class="write-ok">
-		<div class="write-box">
-			<h2>还差一步即可生成表白页面</h2>
-			<p id="write-mp3">背景音乐：<span style="width:500px;" id="text-music" contenteditable="true">http://aijavatool.duapp.com/xiami/1769636197/心肝宝贝</span><i></i>.mp3</p>
-			<p id="write-url"></p>
-			<small><a href="###" id="back" style="display:none;">重新修改</a></small> <button id="write-post">❤ 生成表白页面</button>
-			<div class="write-share">
-				<p>~\(≧▽≦)/~ 点击分享 发送给你的亲亲吧</p>
-				<div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
-			</div>
-		</div>
-	</div>
+	
 
 	<audio id="bgmMusic" src="a/a.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
     
